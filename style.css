@@ -48,6 +48,10 @@
     font-size: 3rem;
     text-align: center;
   }
+  label {
+    color: rgb(162, 166, 168);
+    font-size: 1.5rem;
+  }
   input {
     width: 100%;
     padding: 10px;
