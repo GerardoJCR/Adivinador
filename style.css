@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("./img/code.png");
+}
+.container_game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  height: 100vh;
+  background-color: rgb(72, 31, 138);
+  box-sizing: border-box;
+}
+
+.container_card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 3px solid rgba(15, 15, 180, 0.555);
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 20px;
+}
+
+.container-image img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.container_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  gap: 12px;
+
+  h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid rgb(168, 168, 233);
+    margin-top: 10px;
+    outline: none;
+  }
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  button {
+    padding: 10px;
+    margin: 0 12px;
+    border-radius: 10px;
+    border: 4px solid rgb(168, 168, 233);
+    margin-top: 10px;
+    outline: none;
+    background-color: rgb(168, 168, 233);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-image img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
+  .container_card {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}

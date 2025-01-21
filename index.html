@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina Adivinador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container_game" role="main">
+      <div class="container_card" role="region" aria-labelledby="titulo-juego">
+        <div class="container-image">
+          <img
+            src="./img/robot.png"
+            alt="Imagen de un robot, adivina el número"
+          />
+        </div>
+        <div>
+          <div class="container_text">
+            <h1 id="titulo-juego">Adivina el número</h1>
+
+            <label for="numeroUsuario">Ingresa un número:</label>
+            <input type="number" id="numeroUsuario" />
+            <button id="adivinar">Adivinar</button>
+            <p id="mensaje" aria-live="polite"></p>
+            <p id="intentos" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
